@@ -18,6 +18,7 @@ exit
 ```
 
 ## 3. Setup Laravel App
+clone project
 ```
 cd /var/www 
 sudo mkdir test-project
@@ -25,9 +26,16 @@ sudo chown user:www-data test-project
 cd test-project
 
 git clone https://github.com/gomgomgit/intrajasa-test.git
+```
 
-sudo mkdir .env
+buat dan set env file
+'sesuaikan dengan database yang telah dibuat'
+```
+touch mkdir .env 
+```
 
+install dan migrate database
+```
 composer install
 
 php artisan migrate 
